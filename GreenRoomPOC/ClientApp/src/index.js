@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
@@ -9,9 +9,14 @@ const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
 const rootElement = document.getElementById('root');
 
 ReactDOM.render(
-  <BrowserRouter basename={baseUrl}>
-    <App />
-  </BrowserRouter>,
+//   <BrowserRouter basename={baseUrl}>
+//   <App />
+// </BrowserRouter>,
+  <Suspense fallback={null}>
+    <BrowserRouter basename={baseUrl}>
+      <App />
+    </BrowserRouter>,
+</Suspense>,
   rootElement);
 
 registerServiceWorker();

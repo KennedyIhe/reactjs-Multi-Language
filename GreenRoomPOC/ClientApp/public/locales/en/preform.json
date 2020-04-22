@@ -1,0 +1,23 @@
+{
+    "title": "Hello! Which best describes you?",
+    "radioLabels": {
+      "interested": "Interested in CBRE",
+      "accepted": "Accepted CBRE job offer",
+      "already": "Already working for CBRE"
+    },
+    "inputs": {
+        "firstname": {
+            "label":"First Name",
+            "helpText":""
+        },
+        "lastname": {
+            "label":"Last Name",
+            "helpText":"We'll never share your name with guacamole."
+        },
+        "email": {
+            "label":"Email",
+            "helpText":"This is a help text"
+        }
+      },
+      "btn": "Continue"
+  }

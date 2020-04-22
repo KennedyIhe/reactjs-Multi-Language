@@ -8,6 +8,9 @@ import { Preform } from './components/preform';
 
 export default class App extends Component {
   static displayName = App.name;
+  state = {
+    lang: "en"
+  };
 
   render () {
     return (
