@@ -1,4 +1,7 @@
 {
-    "es": "Español",
-    "en": "English"
+  "es": "Español",
+  "en": "Inglés",
+  "menu": {
+    "home": "Casa"
   }
+}

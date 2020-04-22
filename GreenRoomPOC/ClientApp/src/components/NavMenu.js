@@ -1,49 +1,45 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { useTranslation, Trans } from 'react-i18next';
 import './NavMenu.css';
 
-export class NavMenu extends Component {
-  static displayName = NavMenu.name;
+const NavMenu = (props) => {
+  const displayName = NavMenu.name;
+  const { t, i18n } = useTranslation();
+  const [collapsed, setCollapse] = useState(true);
+  const [lang, setLang] = useState('en');
 
-  constructor (props) {
-    super(props);
+  const handleChange = (event) => {
+    setLang(event.target.value)
+    i18n.changeLanguage(event.target.value);
+    // props.i18n.changeLanguage(event.target.value);
+    // event.preventDefault();
+  };
 
-    this.toggleNavbar = this.toggleNavbar.bind(this);
-    this.state = {
-      collapsed: true
-    };
-  }
+  return (
+    <header>
+      <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
+        <Container>
+          <NavbarBrand tag={Link} to="/">GreenRoomPOC</NavbarBrand>
+          <NavbarToggler onClick={() => setCollapse(!collapsed)} className="mr-2" />
+          <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!collapsed} navbar>
+            <ul className="navbar-nav flex-grow">
+              <NavItem>
+                <NavLink tag={Link} className="text-dark" to="/">{t('translation:menu:home')}</NavLink>
+              </NavItem>
+              <NavItem>
+                <select name="lang" id="lang" className="form-control" value={lang} onChange={handleChange}>
+                  <option value="en"> {t('translation:en')}</option>
+                  <option value="es">{t('translation:es')}</option>
+                </select>
+              </NavItem>
+            </ul>
+          </Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
+};
 
-  toggleNavbar () {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  }
-
-  render () {
-    return (
-      <header>
-        <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
-          <Container>
-            <NavbarBrand tag={Link} to="/">GreenRoomPOC</NavbarBrand>
-            <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-            <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
-              <ul className="navbar-nav flex-grow">
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
-                </NavItem>
-              </ul>
-            </Collapse>
-          </Container>
-        </Navbar>
-      </header>
-    );
-  }
-}
+export default NavMenu;

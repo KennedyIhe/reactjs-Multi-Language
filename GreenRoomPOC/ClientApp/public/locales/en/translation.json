@@ -1,5 +1,7 @@
-
 {
-    "es": "Deutsch",
-    "en": "Inglés"
+  "es": "Spanish",
+  "en": "English",
+  "menu": {
+    "home": "Home"
   }
+}
