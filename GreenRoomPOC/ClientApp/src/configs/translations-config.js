@@ -1,7 +1,7 @@
 var config = {}
 
 config.endpoint = 'https://translation-db.documents.azure.com:443/';
-config.key = 'Yw2GaKboNrsYTo72STT08ti80ZdzNXwTrpKUir7atP9nHugAuFjCbzObW7T72XgAvLRzWvhCCiI5liavtzaHeA==';
+config.key = 'KEY';
 config.database = { id: 'TranslationsDb' };
   
   config.container = {
@@ -18,14 +18,14 @@ config.database = { id: 'TranslationsDb' };
             "translate": "Translate"
         },
         "pageHomeTitle": "Welcome to the Green Room",
-        "pageHomeDesc": "A place to help prepare you for joining CBRE",
+        "pageHomeDesc": "A place to help prepare you for joining ",
         "pageHomeStartBtn": "LET'S GET STARTED",
         "pageHomeContentText": "Welcome at our place.",
         "pagePreformTitle":"Hello! Which best describes you?",
         "pagePreformRadios": {
-            "interested": "Interested in CBRE",
-            "accepted": "Accepted CBRE job offer",
-            "already": "Already working for CBRE"
+            "interested": "Interested in ",
+            "accepted": "Accepted  job offer",
+            "already": "Already working for "
         },
         "pagePreformInputs":{
             "firstname": {
@@ -54,14 +54,14 @@ config.database = { id: 'TranslationsDb' };
             "translate": "Traducir"
         },
         "pageHomeTitle": "Bienvenido a la Green Room",
-        "pageHomeDesc": "Un lugar para ayudarlo a prepararse para unirse a CBRE",
+        "pageHomeDesc": "Un lugar para ayudarlo a prepararse para unirse a ",
         "pageHomeStartBtn": "EMPECEMOS",
         "pageHomeContentText": "Welcome at our place.",
         "pagePreformTitle":"¡Hola! ¿Lo que te describe mejor?",
         "pagePreformRadios": {
-            "interested": "Interesado en CBRE",
-            "accepted": "Oferta de trabajo aceptada de CBRE",
-            "already": "Ya estoy trabajando para CBRE"
+            "interested": "Interesado en ",
+            "accepted": "Oferta de trabajo aceptada de ",
+            "already": "Ya estoy trabajando para "
         },
         "pagePreformInputs":{
             "firstname": {

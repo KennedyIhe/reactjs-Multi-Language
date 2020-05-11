@@ -8,14 +8,14 @@
     "translate": "Traducir"
   },
   "pageHomeTitle": "Bienvenido a la Green Room",
-  "pageHomeDesc": "Un lugar para ayudarlo a prepararse para unirse a CBRE",
+  "pageHomeDesc": "Un lugar para ayudarlo a prepararse para unirse a ",
   "pageHomeStartBtn": "EMPECEMOS",
   "pageHomeContentText": "Welcome at our place.",
   "pagePreformTitle": "¡Hola! ¿Lo que te describe mejor?",
   "pagePreformRadios": {
-    "interested": "Interesado en CBRE",
-    "accepted": "Oferta de trabajo aceptada de CBRE",
-    "already": "Ya estoy trabajando para CBRE"
+    "interested": "Interesado en ",
+    "accepted": "Oferta de trabajo aceptada de ",
+    "already": "Ya estoy trabajando para "
   },
   "pagePreformInputs": {
     "firstname": {
