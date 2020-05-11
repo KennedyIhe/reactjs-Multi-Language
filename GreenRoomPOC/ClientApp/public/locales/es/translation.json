@@ -2,6 +2,7 @@
   "es": "Español",
   "en": "Inglés",
   "menu": {
-    "home": "Casa"
+    "home": "Casa",
+    "translate": "Traducir"
   }
 }

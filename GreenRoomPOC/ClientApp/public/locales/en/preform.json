@@ -1,9 +1,9 @@
 {
     "title": "Hello! Which best describes you?",
     "radioLabels": {
-      "interested": "Interested in CBRE",
-      "accepted": "Accepted CBRE job offer",
-      "already": "Already working for CBRE"
+      "interested": "Interested in",
+      "accepted": "Accepted job offer",
+      "already": "Already working for"
     },
     "inputs": {
         "firstname": {

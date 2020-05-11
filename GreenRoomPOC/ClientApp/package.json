@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@azure/cosmos": "^3.5.2",
     "bootstrap": "^4.3.1",
+    "fs": "0.0.1-security",
     "i18next": "^19.4.3",
     "i18next-xhr-backend": "^3.2.2",
     "jquery": "^3.5.0",
+    "mkdirp": "^1.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.3.5",
@@ -31,10 +34,11 @@
     "extends": "react-app"
   },
   "scripts": {
-    "start": "rimraf ./build && react-scripts start",
+    "start": "node ./src/services/translations.js rimraf ./build && react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src/"
+    "lint": "eslint ./src/",
+    "translate": "node ./src/services/translations.js"
   }
 }

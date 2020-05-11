@@ -17,6 +17,9 @@ i18n
     },
     backend: {
         loadPath: '/locales/{{lng}}/{{ns}}.json',
+        // loadPath: 'azure-prod',
+        // loadPath: 'azure-qa',
+        // loadPath: 'azure-dev',
       },
   });
 export default i18n;

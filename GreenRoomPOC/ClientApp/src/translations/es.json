@@ -1,0 +1,41 @@
+{
+  "id": "spanish",
+  "code": "es",
+  "es": "Español",
+  "en": "Inglés",
+  "menus": {
+    "home": "Casa",
+    "translate": "Traducir"
+  },
+  "pageHomeTitle": "Bienvenido a la Green Room",
+  "pageHomeDesc": "Un lugar para ayudarlo a prepararse para unirse a CBRE",
+  "pageHomeStartBtn": "EMPECEMOS",
+  "pageHomeContentText": "Welcome at our place.",
+  "pagePreformTitle": "¡Hola! ¿Lo que te describe mejor?",
+  "pagePreformRadios": {
+    "interested": "Interesado en CBRE",
+    "accepted": "Oferta de trabajo aceptada de CBRE",
+    "already": "Ya estoy trabajando para CBRE"
+  },
+  "pagePreformInputs": {
+    "firstname": {
+      "label": "Primer nombre",
+      "helpText": ""
+    },
+    "lastname": {
+      "label": "Apellido",
+      "helpText": "Nunca compartiremos su nombre con guacamole."
+    },
+    "email": {
+      "label": "Correo electrónico",
+      "helpText": "Este es un texto de ayuda"
+    }
+  },
+  "pagePreformSubmitBtn": "Seguir",
+  "user-custom-0112": "",
+  "_rid": "g7hPAKaVkcsCAAAAAAAAAA==",
+  "_self": "dbs/g7hPAA==/colls/g7hPAKaVkcs=/docs/g7hPAKaVkcsCAAAAAAAAAA==/",
+  "_etag": "\"ac00dcf9-0000-0700-0000-5ea865ec0000\"",
+  "_attachments": "attachments/",
+  "_ts": 1588094444
+}

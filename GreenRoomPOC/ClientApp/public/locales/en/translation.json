@@ -2,6 +2,7 @@
   "es": "Spanish",
   "en": "English",
   "menu": {
-    "home": "Home"
+    "home": "Home",
+    "translate": "Translate"
   }
 }

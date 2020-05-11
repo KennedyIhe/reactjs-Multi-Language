@@ -20,4 +20,5 @@ ReactDOM.render(
 </Suspense>,
   rootElement);
 
+// initDatabase().then(() => createTranslationFiles());
 registerServiceWorker();

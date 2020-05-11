@@ -29,6 +29,9 @@ const NavMenu = (props) => {
                 <NavLink tag={Link} className="text-dark" to="/">{t('translation:menu:home')}</NavLink>
               </NavItem>
               <NavItem>
+                <NavLink tag={Link} className="text-dark" to="/translate">{t('translation:menu:translate')}</NavLink>
+              </NavItem>
+              <NavItem>
                 <select name="lang" id="lang" className="form-control" value={lang} onChange={handleChange}>
                   <option value="en"> {t('translation:en')}</option>
                   <option value="es">{t('translation:es')}</option>

@@ -22,7 +22,7 @@ const Preform = (props) => {
                             </div>
                             <div className="custom-control custom-radio">
                                 <input type="radio" id="describe3" name="describe" className="custom-control-input" />
-                                <label className="custom-control-label" htmlFor="describe3">{t('preform:radioLabels:already')}E</label>
+                                <label className="custom-control-label" htmlFor="describe3">{t('preform:radioLabels:already')}</label>
                             </div>
                         </div>
 
